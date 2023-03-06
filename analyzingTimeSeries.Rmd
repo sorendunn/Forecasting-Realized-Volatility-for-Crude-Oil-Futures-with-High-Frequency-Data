@@ -1,0 +1,43 @@
+---
+title: "analyzingTimeSeries"
+output: pdf_document
+date: "2023-03-06"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(DescTools)
+library(caret)
+library(stats)
+```
+
+```{r}
+price_df = read.csv("prices.csv")
+head(price_df)
+```
+
+```{r}
+analysis_df = price_df[,c("index","Close_fut","Close_gas","Close_btc","Close_bond")]
+```
+
+# Diagnostic plots
+```{r}
+cor(analysis_df)
+```
+
+```{r}
+ggplot(data=analysis_df,aes(x=Close_gas,y=Close_fut)) +
+  geom_point()
+```
+```{r}
+ggplot(data=analysis_df,aes(x=Close_btc,y=Close_fut)) +
+  geom_point()
+```
+
+```{r}
+ggplot(data=analysis_df,aes(x=Close_bond,y=Close_fut)) +
+  geom_point()
+```
+```{r}
+acf(analysis_df,max.mfrow=1)
+```
