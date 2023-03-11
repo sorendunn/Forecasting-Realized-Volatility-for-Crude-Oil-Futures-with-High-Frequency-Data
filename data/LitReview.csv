@@ -1,0 +1,10 @@
+﻿Authors,Year Published,Link,Data set,Period,Feature Set,Lag,Horizon,Method,Performance Criteria,Best Performance
+Doering et. al.,2017,https://ieeexplore.ieee.org/abstract/document/8101595,London Stock Exchange,2007-2008,"Limit order book state, trades, buy/sell orders, order deletions",,,CNN,"Accuracy, kappa",0.223 kappa
+Tino et. al.,2001,https://www.scopus.com/record/display.uri?eid=2-s2.0-0035392695&origin=inward,"DAX, FTSE100, call/put options",1991-1998,Price data,10 observations,,"MM, RNN, GARCH","Ewa-measure, iv, daily profits' mean and std",daily profit mean 0.1
+Xiong et. al.,2016,https://arxiv.org/pdf/1512.04916.pdf,S&P500,2004-2015,"Price data, 25 Google Domestic trend dimensions",,1 d,LSTM,"MAPE, RMSE",MAPE 24.2%
+Zhou et. al.,2018,https://arxiv.org/pdf/1805.11954.pdf,"CSI 300, 28 words of the daily search volume on Baidu",2006-2017,Price data and text,5 d,5 d,LSTM,"MSE, MAPE",MAPE of 17%
+Kim et. al.,2017,https://www.sciencedirect.com/science/article/pii/S0957417418301416,"KOSPI200, Korea Treasury Bond interest rate, AA-grade corporate bond interest rate, gold, crude oil",2001-2011,Price data,22 d,1 d,LSTM + GARCH,"MAE, MSE, HMAE, HMSE",MAE of 0.01069
+Nikolaev et. al.,2012,https://www.sciencedirect.com/science/article/pii/S0925231213005377,DEM/GBP exchange rate,,Returns,,,RMDN-GARCH,"NMSE, NMAE, HR, WHR",NMSE 0.7562
+Psaradellis et. al.,2016,https://www.sciencedirect.com/science/article/pii/S0169207016300644,"VIX, VXN, VXD",2002-2014,first five autoregressive lags,5 d,"1 d, 22 d",HAR-GASVR,"MAE, RMSE",MAE 0.03
+Kang et. al.,2008,https://www.sciencedirect.com/science/article/pii/S0140988308001539,Crude oil spot prices,1992-2006,Price data,1 d,"1 d, 5 d, 20 d",GARCH-type models,"MSE, MAE, DM",1 d MAE 2.88
+Sardorsky,2006,https://www.sciencedirect.com/science/article/pii/S014098830600048X,,,,"20 d, 60 d, 180 d",,GARCH-type models,"MSE, MAD",14842 MSE
